@@ -506,7 +506,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Camera
   Player: {fileID: 1652846830}
-  offset: {x: 0, y: 0, z: 0}
+  offset: {x: -0.08, y: 3.45, z: -3.95}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,6 +1487,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
   mouseSensitivity: 100
   playerBody: {fileID: 1652846834}
+  xRotation: 0
 --- !u!114 &1652846836
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1502,6 +1503,7 @@ MonoBehaviour:
   controller: {fileID: 1652846837}
   speed: 12
   gravity: -9.81
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!143 &1652846837
 CharacterController:
   m_ObjectHideFlags: 0
