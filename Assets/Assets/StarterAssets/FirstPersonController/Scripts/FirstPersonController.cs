@@ -112,6 +112,7 @@ namespace StarterAssets
 
 		private void Update()
 		{
+            if (Dialogue.isDialogueActive) return;
             JumpAndGravity();
 			GroundedCheck();
 			Move();
@@ -119,7 +120,8 @@ namespace StarterAssets
 
 		private void LateUpdate()
 		{
-			CameraRotation();
+            if (Dialogue.isDialogueActive) return;
+            CameraRotation();
 		}
 
 		private void GroundedCheck()
